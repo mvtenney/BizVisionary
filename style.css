@@ -15,7 +15,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');
-
 * {
     box-sizing: border-box;
 }
@@ -61,7 +60,6 @@ a:active {
     color: #fff;
 }
 
-
 /* 
     ELEMENTOR STYLES
  */
@@ -82,13 +80,10 @@ h1.elementor-heading-title.elementor-size-default {
 /* 
     ELEMENTOR STYLES END 
 */
+
 /* 
     Gutenberg STYLES
  */
-
-
-
-
 
 /* 
     Gutenberg STYLES End
@@ -96,7 +91,6 @@ h1.elementor-heading-title.elementor-size-default {
 
 .wp-block-columns.bv-two-col {
     display: flex;
-
     margin: auto;
     align-items: center;
     /* justify-content: flex-end; */
@@ -124,7 +118,6 @@ h1.elementor-heading-title.elementor-size-default {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.2em;
     font-weight: 100;
-
 }
 
 .bv-modaL-link p button {
@@ -150,13 +143,10 @@ h1.elementor-heading-title.elementor-size-default {
         .wp-block-column:not(:first-child) {
             margin: 0;
         }
-
         .kt-row-column-wrap {
             padding: 0;
         }
-
     }
-
     @media (min-width: 600px) {
         .wp-block-column {
             /* flex-basis: calc(50% - 16px); */
@@ -166,23 +156,19 @@ h1.elementor-heading-title.elementor-size-default {
         /*
     Navbar
 */
-
         .admin-bar #site-navigation {
             top: 32px;
         }
-
         .topNav {
             display: flex;
             padding: 3px 0;
             background-color: #333;
         }
-
         .topNav .navLeft {
             font-size: 1.2rem;
             text-transform: uppercase;
             letter-spacing: .5px;
         }
-
         #site-navigation .xSmallPromo {
             color: #fff;
             font-size: 1.4rem;
@@ -194,14 +180,11 @@ h1.elementor-heading-title.elementor-size-default {
             font-weight: 600;
             display: block;
         }
-
         .bottomNav {
             flex-grow: 1;
             display: flex;
         }
-
-        .bottomNav .container,
-        .topNav .container {
+        .bottomNav .container, .topNav .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -209,19 +192,15 @@ h1.elementor-heading-title.elementor-size-default {
             padding: 0 20px;
             max-width: 1300px;
         }
-
         .bottomNav .menu-menu-1-container {
             display: flex;
             justify-content: space-between;
             align-items: stretch;
             padding: 0;
         }
-
-        section#main-content,
-        #primary {
+        section#main-content, #primary {
             margin-top: 128px;
         }
-
         #site-navigation {
             position: fixed;
             z-index: 200;
@@ -241,18 +220,15 @@ h1.elementor-heading-title.elementor-size-default {
             flex-direction: column;
             justify-content: center;
         }
-
         #site-navigation.navigation-scroll-stopped {
             background: linear-gradient(174deg, #00aeefb3 0%, rgba(255, 255, 255, 1) 30%, rgba(211, 200, 192, 1) 90%, rgba(0, 174, 239, 1) 100%);
         }
-
         #site-navigation a {
             color: #000;
             text-decoration: none;
             text-shadow: 0 0 15px #fff;
             font-size: 1.8rem;
         }
-
         #site-navigation .main-menu {
             display: flex;
             justify-content: space-between;
@@ -260,9 +236,7 @@ h1.elementor-heading-title.elementor-size-default {
             align-items: center;
             position: relative;
         }
-
-        #site-navigation .main-menu .menu-item,
-        #site-navigation .main-menu .menu-item a {
+        #site-navigation .main-menu .menu-item, #site-navigation .main-menu .menu-item a {
             margin: auto 0;
             height: 100%;
             display: flex;
@@ -270,20 +244,16 @@ h1.elementor-heading-title.elementor-size-default {
             text-align: left;
             justify-content: center;
         }
-
         #site-navigation .main-menu a {
             margin: auto 0;
             padding: 30px 20px 15px;
         }
-
         #site-navigation .main-menu>li:last-of-type a {
             padding: 35px 0 18px 20px;
         }
-
         #site-navigation .main-menu .sub-menu {
             display: none;
         }
-
         #site-navigation .main-menu .menu-item-has-children:hover .sub-menu {
             display: block;
             position: absolute;
@@ -291,24 +261,19 @@ h1.elementor-heading-title.elementor-size-default {
             color: #fff;
             top: 77px;
         }
-
         #site-navigation .main-menu .sub-menu a {
             margin: auto 0;
             padding: 10px 30px 10px 15px;
         }
-
         #site-navigation .main-menu .sub-menu a {
             color: #fff;
         }
-
         #site-navigation .main-menu .sub-menu .menu-item:hover {
             background-color: rgba(56, 179, 237, .80);
         }
-
         .site-logo img {
             margin-top: 5px;
         }
-
         /* ==================================================== */
         /*      Footer Style                                    */
         /* ==================================================== */
@@ -318,10 +283,7 @@ h1.elementor-heading-title.elementor-size-default {
             background-color: #333;
             color: #fff;
         }
-
-
         /* footer .site-footer-links {} */
-
         footer .verticalLine {
             background-color: #fff;
             height: 200px;
@@ -329,58 +291,44 @@ h1.elementor-heading-title.elementor-size-default {
             box-shadow: 0 0 5px #000;
             margin-bottom: 20px;
         }
-
         .site-footer-container {
             display: flex;
         }
-
         footer .container {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             padding: 36px 0;
         }
-
         .footer-half {
             flex-basis: 50%;
         }
-
         .footer-full-width {
             flex-basis: 100%;
             padding: 65px 0;
-
         }
-
         footer .site-footer-links {
             display: flex;
             width: 100%;
             justify-content: space-between;
             font-weight: 100;
         }
-
         .site-footer-links ul.sub-menu {
             /* padding-left: 1px; */
             padding-top: 10px;
         }
-
-        .site-footer-links-col h3,
-        .site-footer-links-col li {
+        .site-footer-links-col h3, .site-footer-links-col li {
             font-size: 1.8rem;
             line-height: 3rem;
         }
-
         .site-footer-links-col h3 {
             font-weight: 700;
             padding-bottom: 10px;
-
-
         }
-
         .site-footer-about p {
             line-height: 3.2rem;
             max-width: 400px;
         }
-
         .site-footer-about h3 {
             padding-bottom: 8px;
             text-transform: UPPERCASE;
@@ -389,7 +337,6 @@ h1.elementor-heading-title.elementor-size-default {
             font-size: 1.2rem;
             line-height: 3rem;
         }
-
         ul#menu-social {
             display: flex;
             justify-content: space-between;
@@ -397,7 +344,6 @@ h1.elementor-heading-title.elementor-size-default {
             margin: auto;
             font-size: 3rem;
         }
-
         input#mce-EMAIL {
             width: 40rem;
             background-color: #555;
@@ -405,7 +351,6 @@ h1.elementor-heading-title.elementor-size-default {
             border-radius: 5px;
             border: transparent;
         }
-
         .btn-signup {
             color: #fff;
             font-size: 1.4rem;
@@ -419,23 +364,19 @@ h1.elementor-heading-title.elementor-size-default {
             border: transparent;
             height: 40px;
         }
-
         div#mc_embed_signup_scroll {
             display: flex;
             /* flex-wrap: wrap; */
             flex-direction: column;
         }
-
         label[ for="mce-EMAIL"] {
             font-size: 1.8rem;
             line-height: 6rem;
             font-weight: 700;
         }
-
         /* ==================================================== */
         /*      Reorganize and clean code below                 */
         /* ==================================================== */
-
         /*
     Header
 */
@@ -448,13 +389,11 @@ h1.elementor-heading-title.elementor-size-default {
             position: relative;
             overflow: hidden;
         }
-
         header .container {
             margin: 0 auto;
             display: flex;
             flex-direction: column;
         }
-
         .headerContent {
             margin: auto;
             display: flex;
@@ -462,7 +401,6 @@ h1.elementor-heading-title.elementor-size-default {
             height: 100%;
             justify-content: flex-end;
         }
-
         .headerContent .paulFace {
             object-fit: contain;
             max-width: 95%;
@@ -472,7 +410,6 @@ h1.elementor-heading-title.elementor-size-default {
             /* left: 0; */
             z-index: 2;
         }
-
         img.titleBubbles {
             filter: drop-shadow(0px 0px 20px #fff);
             margin: auto 0 auto -300px;
@@ -480,7 +417,6 @@ h1.elementor-heading-title.elementor-size-default {
             z-index: 2;
             /* position: relative; */
         }
-
         header h1 {
             font-family: 'Montserrat', sans-serif;
             font-size: 6rem;
@@ -488,39 +424,32 @@ h1.elementor-heading-title.elementor-size-default {
             text-shadow: 0 0 10px #000000;
             text-transform: uppercase;
         }
-
         header h4 {
             font-family: 'Montserrat', sans-serif;
             font-size: 3rem;
             color: #fff;
             text-shadow: 0 0 5px #000000;
         }
-
         /*
     Footer
 */
-
         .footerLower {
             display: flex;
             padding: 15px 0;
             background-color: #333;
         }
-
         /*
     Section Styles
 */
-
         /* Side By Side Section*/
         .flex-2 .container {
             display: flex;
             padding: 60px 0;
         }
-
         .titleSection {
             flex-basis: 50%;
             display: flex;
         }
-
         .titleSection h2 {
             margin: auto 50px;
             font-size: 5rem;
@@ -528,68 +457,55 @@ h1.elementor-heading-title.elementor-size-default {
             /* max-width: 320px; */
             text-align: right;
         }
-
         .contentBorderRight {
             flex-basis: 50%;
             border-left: 3px solid rgba(56, 179, 237, 1);
         }
-
         .contentBorderRight p {
             flex-basis: 50%;
             margin-left: 40px;
             line-height: 3rem;
             padding: 10px 0;
         }
-
         .white {
             background-color: #fff;
         }
-
         .blue {
             background-color: #59b9e5;
         }
-
         /*Quote Section*/
         .quote {
             width: 780px;
             max-width: 100%;
             margin: 80px auto;
         }
-
         .white {
             background-color: #fff;
             padding: 60px 0;
         }
-
         .blue {
             background-color: #59b9e5;
             color: #fff;
         }
-
         .flex-2-full {
             display: flex;
             overflow: hidden;
         }
-
         #bulletHeader .fifty {
             flex-basis: 50%;
             background-size: cover;
             height: 550px;
             filter: blur(7px);
         }
-
         #bulletHeader .fifty:hover {
             filter: blur(0px);
         }
-
         #bulletHeader .fifty.entreprenuers {
-            background-image: url('../media/forStartUps.jpeg');
+            background-image: url('images/forStartUps.jpeg');
         }
-
         #bulletHeader .fifty.established {
-            background-image: url('../media/Heroimage.jpeg');
+            background-image: url('images/Heroimage.jpeg');
         }
-
         #bulletServices .fifty {
             padding: 60px 40px;
             flex-basis: 50%;
@@ -597,17 +513,14 @@ h1.elementor-heading-title.elementor-size-default {
             flex-direction: column;
             box-shadow: 0 0 5px #000;
         }
-
         #bulletServices .white.fifty {
             align-items: flex-end;
         }
-
         #bulletServices .fifty-item {
             min-height: 120px;
             display: flex;
             flex-direction: column;
         }
-
         #bulletServices .fifty-item h2 {
             font-size: 3rem;
             line-height: 3.8rem;
@@ -616,81 +529,66 @@ h1.elementor-heading-title.elementor-size-default {
             width: 600px;
             max-width: 100%;
         }
-
         #bulletServices .fifty-item p {
             display: none;
         }
-
         #bulletServices .fifty-item:hover h2 {
             display: none;
         }
-
         #bulletServices .fifty-item:hover p {
             margin: auto 0;
             display: block;
             width: 600px;
             max-width: 100%;
         }
-
         @media screen and (max-width:750px) {
             #bulletServices {
                 flex-direction: column;
                 max-width: 100%;
             }
-
             #bulletServices .white.fifty {
                 align-items: center;
                 margin: auto;
             }
-
             #bulletServices .blue.fifty {
                 align-items: center;
                 margin: auto;
             }
-
             #bulletServices .fifty-item {
                 max-width: 100%;
             }
         }
-
         .quote p {
             font-size: 2.2rem;
             line-height: 3rem;
             color: #333;
         }
-
         .authorCard {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             margin-top: 20px;
         }
-
         .authorCardCopy {
             display: flex;
             flex-direction: column;
         }
-
         .authorName {
             font-size: 1.8rem;
             color: #000;
             font-weight: bold;
         }
-
         .authorTitle {
             font-size: 1.4rem;
             color: #333;
             font-family: 'Montserrat', sans-serif;
             text-transform: uppercase;
         }
-
         .authorImg {
             width: 100px;
             margin-right: 15px;
         }
-
         /*=============================SANDBOX STYLES===================*/
-
         .hero {
             display: flex;
             width: 100%;
@@ -700,9 +598,7 @@ h1.elementor-heading-title.elementor-size-default {
             background-color: #222;
             height: 100vh;
         }
-
-        .herotext h1,
-        .slideIn {
+        .herotext h1, .slideIn {
             font-size: 4.62vw;
             font-weight: 600;
             line-height: 1.2em;
@@ -710,38 +606,31 @@ h1.elementor-heading-title.elementor-size-default {
             text-shadow: 0 0 5px #000;
             width: 57vw;
         }
-
         .herotext p {
             max-width: 700px;
             padding-top: 40px;
             line-height: 1.5em;
             color: #fff;
         }
-
         .herotext {
             position: relative;
             z-index: 1;
             animation: slide 5s cubic-bezier(0.075, 0.82, 0.165, 1) normal forwards;
             margin-top: 10%;
-
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             height: 40vh;
-
         }
-
         @keyframes slide {
             from {
                 left: 0px;
                 color: transparent;
             }
-
             to {
                 left: 300px;
             }
         }
-
         .services {
             margin: auto;
             height: 50vh;
@@ -752,13 +641,11 @@ h1.elementor-heading-title.elementor-size-default {
             background-attachment: fixed;
             width: 100%;
         }
-
         .services .container {
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
-
         .services .verticalLine {
             background-color: #fff;
             height: 200px;
@@ -766,7 +653,6 @@ h1.elementor-heading-title.elementor-size-default {
             box-shadow: 0 0 5px #000;
             margin-bottom: 20px;
         }
-
         .services h1 {
             font-size: 3.61vw;
             font-weight: 500;
@@ -776,20 +662,16 @@ h1.elementor-heading-title.elementor-size-default {
             text-align: center;
             ;
         }
-
-
         .newbiz {
             background-color: #FAF9F8;
             width: 100%;
             overflow: hidden;
         }
-
         .serviceslist {
             display: flex;
             flex-direction: column;
             margin-bottom: 140px;
         }
-
         .container h4 {
             font-weight: 100;
             font-size: 3.2rem;
@@ -797,33 +679,25 @@ h1.elementor-heading-title.elementor-size-default {
             text-transform: UPPERCASE;
             letter-spacing: 0.2em;
         }
-
-        .serviceslist h3,
-        .products-desc h3 {
+        .serviceslist h3, .products-desc h3 {
             font-weight: 500;
             font-size: 2rem;
             line-height: 40px;
             margin-bottom: 40px;
             letter-spacing: -0.02em;
         }
-
         .products-desc ul {
             margin-top: 40px;
         }
-
         .products-desc ul li {
             font-size: 1.8rem;
             line-height: 3rem;
             display: flex;
-
-
         }
-
         .products-desc ul li i {
             padding-right: 15px;
             padding-top: 7px;
         }
-
         .serviceslist p {
             max-width: 360px;
             padding-bottom: 40px 0;
@@ -831,7 +705,6 @@ h1.elementor-heading-title.elementor-size-default {
             margin-bottom: 56px;
             line-height: 28px;
         }
-
         .servicesNav ul {
             display: flex;
             flex-direction: row;
@@ -839,7 +712,6 @@ h1.elementor-heading-title.elementor-size-default {
             align-items: center;
             margin-left: 20px;
         }
-
         .servicesNav ul li {
             font-weight: 100;
             font-size: 2rem;
@@ -848,9 +720,7 @@ h1.elementor-heading-title.elementor-size-default {
             margin-bottom: -1px;
             border: 1px solid #FAF9F8;
         }
-
-        .servicesNav ul li:hover,
-        .servicesNav ul li.active {
+        .servicesNav ul li:hover, .servicesNav ul li.active {
             color: #59B9E5;
             border: 1px solid #59B9E5;
             position: relative;
@@ -858,12 +728,10 @@ h1.elementor-heading-title.elementor-size-default {
             border-top-right-radius: 10px;
             border-top-left-radius: 10px;
         }
-
         .servicesNav ul li.active {
             border-bottom: 1px solid #fff;
             background: #fff;
         }
-
         /* .servicesNav ul li:not(.active){
     border-right:none;
 } */
@@ -881,7 +749,6 @@ h1.elementor-heading-title.elementor-size-default {
 .servicesNav ul li:not(.active):nth-of-type(3):hover{
     border-right: 1px solid #59B9E5;
 } */
-
         .gridcontent {
             display: none;
             justify-content: space-between;
@@ -890,7 +757,6 @@ h1.elementor-heading-title.elementor-size-default {
             background: #fff;
             border-radius: 10px;
         }
-
         ul.gridtext {
             display: flex;
             width: 100%;
@@ -898,13 +764,11 @@ h1.elementor-heading-title.elementor-size-default {
             align-items: stretch;
             padding: 20px 20px 40px;
         }
-
         .gridtext>li {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
-
         .gridtext h5 {
             line-height: 4rem;
             font-size: 1.5rem;
@@ -912,7 +776,6 @@ h1.elementor-heading-title.elementor-size-default {
             text-transform: uppercase;
             letter-spacing: 0.1em;
         }
-
         .link {
             font-size: 1.1em;
             font-weight: 700;
@@ -921,34 +784,28 @@ h1.elementor-heading-title.elementor-size-default {
             padding-right: 20px;
             text-transform: uppercase;
         }
-
         .link:hover {
             font-size: 1.1em;
             border-bottom: 2px solid #222;
             font-weight: 600;
             padding-bottom: 2px;
         }
-
         .gridcontent.active {
             display: flex;
             align-items: center;
         }
-
         .gridimg {
             float: right;
         }
-
         .oldbiz {
             width: 100%;
             height: 60vh;
             background-color: #222;
             margin: 20px 0;
         }
-
         .active {
             display: flex;
         }
-
         .mission-statement {
             display: flex;
             justify-content: flex-end;
@@ -957,10 +814,9 @@ h1.elementor-heading-title.elementor-size-default {
             padding: 180px 0;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-image: url(http://bizvisionary.dom/wp-content/uploads/2019/06/B_W_Profile.png);
+            background-image: url(images/B_W_Profile.png);
             background-size: contain;
         }
-
         .about-me-text-mini {
             display: block;
             overflow: hidden;
@@ -972,11 +828,10 @@ h1.elementor-heading-title.elementor-size-default {
             margin-bottom: 60px;
             line-height: 28px;
         }
-
         .why-choose {
             width: 100%;
             height: 100%;
-            background-image: url(http://bizvisionary.dom/wp-content/themes../../uploads/2019/06/buildings.jpg);
+            background-image: url(images/buildings.jpg);
             background-size: cover;
             display: flex;
             justify-content: center;
@@ -985,7 +840,6 @@ h1.elementor-heading-title.elementor-size-default {
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
-
         .why-choose-text-mini {
             display: block;
             overflow: hidden;
@@ -995,18 +849,14 @@ h1.elementor-heading-title.elementor-size-default {
             padding: 45px 20px;
 
         }
-
-
         .why-choose-text-mini p {
             font-weight: 400;
             line-height: 28px;
             margin-bottom: 20px;
         }
-
         .why-choose-text-mini p:last-of-type {
             margin-bottom: 60px;
         }
-
         .mission-statement h2 {
             font-weight: 500;
             font-size: 2.2vw;
@@ -1014,7 +864,6 @@ h1.elementor-heading-title.elementor-size-default {
             margin-bottom: 46px;
             letter-spacing: -0.02em;
         }
-
         .why-choose-text-mini h2 {
             font-weight: 500;
             font-size: 2.2rem;
@@ -1022,19 +871,14 @@ h1.elementor-heading-title.elementor-size-default {
             margin-bottom: 20px;
             letter-spacing: -0.02em;
         }
-
         .aboutme-img {
             overflow: hidden;
             height: 90vh;
         }
-
         .aboutme-img img {
             object-fit: contain;
             width: 80%;
         }
-
-
-
         .button {
             width: 20rem;
             height: 4.8rem;
@@ -1044,16 +888,13 @@ h1.elementor-heading-title.elementor-size-default {
             align-items: center;
             justify-content: center;
             border-radius: 5px;
-
             font-size: 1.4rem;
             padding: 5px 10px;
             text-transform: uppercase;
             margin: 5px auto;
-
             border-radius: 4px;
             font-weight: 600;
         }
-
         .button a {
             text-transform: uppercase;
             letter-spacing: 0.1em;
@@ -1061,16 +902,11 @@ h1.elementor-heading-title.elementor-size-default {
             color: #fff;
             text-align: center;
         }
-
-
-
         .container.shop {
             height: 100vh;
             width: 100%;
             background-color: #59B9E5;
-
         }
-
         .products {
             display: flex;
             justify-content: space-between;
@@ -1078,43 +914,30 @@ h1.elementor-heading-title.elementor-size-default {
             align-items: center;
             margin-bottom: 100px;
         }
-
         .products-img {
-
             width: 500px;
-
         }
-
         .products-img img {
             width: 100%;
             height: auto;
         }
-
         .products-desc {
             display: flex;
             flex-direction: column;
-
         }
-
         .products-desc p {
             max-width: 700px;
             line-height: 3rem;
         }
-
-
-
-
         .button.cta {
             margin: 64px 0;
             background-color: #59B9E5;
             color: #fff;
         }
-
         .backgroundBackground {
             overflow: hidden;
             width: 100%;
         }
-
         .inkImg {
             background-color: #000;
             background-image: url("images/WithConsultant.jpg");
@@ -1126,7 +949,6 @@ h1.elementor-heading-title.elementor-size-default {
             float: right;
             animation: spreadImg 3s cubic-bezier(0.075, 0.82, 0.165, 1) normal forwards;
         }
-
         svg {
             width: auto;
             float: right;
@@ -1134,54 +956,42 @@ h1.elementor-heading-title.elementor-size-default {
             animation: spreadInk 3s cubic-bezier(0.075, 0.82, 0.165, 1) normal forwards;
             background: transparent;
         }
-
         @keyframes spreadInk {
             from {
                 height: 0vw;
             }
-
             to {
                 height: 80vh;
             }
         }
-
         @keyframes spreadImg {
             from {
                 height: 0vw;
                 box-shadow: inset 0 0 50vw 80vh #000;
             }
-
             to {
                 height: 80vh;
                 box-shadow: inset 30vw 0vw 6vw 3vh #000;
             }
         }
-
         /*CTA STYLES*/
         .calltoaction {
             display: flex;
             max-width: 468px;
             width: 100%;
             justify-content: space-between;
-
         }
-
         .button.primary {
             background-color: #fff;
             padding: 10px 30px;
             opacity: 0.8;
         }
-
-        .button.primary:hover,
-        .button.secondary:hover {
+        .button.primary:hover, .button.secondary:hover {
             opacity: 1;
         }
-
         .button.secondary {
             border: 2px solid #fff;
             color: #fff;
             opacity: 0.8;
         }
-
-
-        /* FOOTER STYLES */
+        /* FOOTER STYLES*/

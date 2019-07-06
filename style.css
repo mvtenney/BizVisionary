@@ -320,9 +320,7 @@ h1.elementor-heading-title.elementor-size-default {
         }
 
 
-        footer .site-footer-links {}
-
-        ;
+        /* footer .site-footer-links {} */
 
         footer .verticalLine {
             background-color: #fff;
@@ -1187,4 +1185,4 @@ h1.elementor-heading-title.elementor-size-default {
         }
 
 
-        /* FOOTER STYLES*/
+        /* FOOTER STYLES */

@@ -109,6 +109,7 @@ $upload_dir = wp_upload_dir();
 
     </div>
 </div>
+
 <!--BIZ SHOP MINI SECTION START -->
 <div class="shop">
     <div class="container">
@@ -118,18 +119,11 @@ $upload_dir = wp_upload_dir();
                 <img alt="brand development workshop" src="<?php echo $upload_dir['baseurl'] . '/2019/06/Workbook_Img-e1561596990639.png' ?>">
             </div>
             <div class="products-desc">
-                <h3>Master Collection - Brand Development Workshop Series</h3>
-                <p>By exploring the lessons, completing the exercises and answering important questions you’ll gain a better understanding of your company’s core values, your offering, industry, audience and competitors. Completing the series of workshops that make up this book will help you to:</p>
-                <ul>
-                  <li>  <i class="fas fa-check"></i> <p> Discover Your Niche</p> </li>
-                <li>  <i class="fas fa-check"></i> <p>Improve Your Offering</p></li>
-              <li>   <i class="fas fa-check"></i> <p>Assess Various Marketing Methods</p></li>
-                 <li> <i class="fas fa-check"></i><p>Re-Target for Better Customers</p></li>
-               <li>  <i class="fas fa-check"></i><p>Develop Your Marketing Procedures</p></li>
-                <li> <i class="fas fa-check"></i> <p>Generate Your Story and Content </p></li>
-              <li>   <i class="fas fa-check"></i> <p>Create A Winning Logo Concept</p></li>
-                </ul>
-                <a class="button cta" href="#">Get the Workshop</a> <!--<input type="text" placeholder="promo code">-->
+            <?php $bdw = wc_get_product(193);
+                echo '<h3>'.$bdw->get_name().'</h3>'.
+                '<p>'.$bdw->get_description().'</p>'.
+                '<a class="button cta" href="/cart'.$bdw->add_to_cart_url().'">Get the Workshop</a>';
+            ?>
             </div>
         </div>
     </div>

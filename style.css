@@ -596,7 +596,12 @@ h1.elementor-heading-title.elementor-size-default {
             margin-top: 128px;
             justify-content: center;
             background-color: #222;
-            height: 100vh;
+            height: calc(100vh - 128px);
+        }
+        .hero .container {
+            position: absolute;
+            margin: auto;
+            z-index: 1;
         }
         .herotext h1, .slideIn {
             font-size: 4.62vw;
@@ -615,20 +620,22 @@ h1.elementor-heading-title.elementor-size-default {
         .herotext {
             position: relative;
             z-index: 1;
-            animation: slide 5s cubic-bezier(0.075, 0.82, 0.165, 1) normal forwards;
-            margin-top: 10%;
+            animation: slide 2s cubic-bezier(0.075, 0.82, 0.165, 1) normal forwards;
+            margin:10% auto auto;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             height: 40vh;
+            width: 1300px;
         }
         @keyframes slide {
             from {
-                left: 0px;
-                color: transparent;
+                left: -50vw;
+                opacity:0
             }
             to {
-                left: 300px;
+                left:0;
+                opacity:1;
             }
         }
         .services {
@@ -711,13 +718,13 @@ h1.elementor-heading-title.elementor-size-default {
             justify-content: flex-start;
             align-items: center;
             margin-left: 20px;
+            margin-bottom: -2px;
         }
         .servicesNav ul li {
             font-weight: 100;
             font-size: 2rem;
             cursor: pointer;
             padding: 20px;
-            margin-bottom: -1px;
             border: 1px solid #FAF9F8;
         }
         .servicesNav ul li:hover, .servicesNav ul li.active {
@@ -937,16 +944,20 @@ h1.elementor-heading-title.elementor-size-default {
         .backgroundBackground {
             overflow: hidden;
             width: 100%;
+            position: relative;
+            z-index: 0;
         }
         .inkImg {
-            background-color: #000;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #222;
             background-image: url("images/WithConsultant.jpg");
             background-size: auto 80vh;
             background-position: top 0 right 0;
             background-repeat: no-repeat;
             height: auto;
             overflow: hidden;
-            float: right;
             animation: spreadImg 3s cubic-bezier(0.075, 0.82, 0.165, 1) normal forwards;
         }
         svg {
@@ -967,11 +978,11 @@ h1.elementor-heading-title.elementor-size-default {
         @keyframes spreadImg {
             from {
                 height: 0vw;
-                box-shadow: inset 0 0 50vw 80vh #000;
+                box-shadow: inset 0 0 50vw 80vh #222;
             }
             to {
                 height: 80vh;
-                box-shadow: inset 30vw 0vw 6vw 3vh #000;
+                box-shadow: inset 30vw 0vw 6vw 3vh #222;
             }
         }
         /*CTA STYLES*/

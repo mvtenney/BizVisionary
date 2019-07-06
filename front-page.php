@@ -29,13 +29,16 @@ $upload_dir = wp_upload_dir();
 </script>
 
 <div class="hero">
-    <div class="herotext">
-        <h1><span class="slideIn">Design the business you've always wanted.</span></h1>
-        <div class="calltoaction">
-            <a class="button primary">SCHEDULE NOW</a>
-            <a class="button secondary">Learn More</a>
-        </div>  
+    <div class="container">
+        <div class="herotext">
+            <h1><span class="slideIn">Design the business you've always wanted.</span></h1>
+            <div class="calltoaction">
+                <a class="button primary">SCHEDULE NOW</a>
+                <a class="button secondary">Learn More</a>
+            </div>  
+        </div>
     </div>
+    
 
     <div class="backgroundBackground">
         <div class="inkImg">

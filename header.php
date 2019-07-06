@@ -10,7 +10,7 @@
 <?php wp_body_open(); ?>
   <!--NAVBAR STARTS-->
   <?php if ( has_nav_menu( 'menu-1' ) ) : ?>
-    <nav id="site-navigation" class="main-navigation" aria-label="<?php esc_attr_e( 'Top Menu', 'twentynineteen' ); ?>">
+    <nav id="site-navigation" class="main-navigation navigation-scroll-stopped" aria-label="<?php esc_attr_e( 'Top Menu', 'twentynineteen' ); ?>">
             <?php //fill with customizer stuff ?>
             <div class="topNav">
                 <div class="container">

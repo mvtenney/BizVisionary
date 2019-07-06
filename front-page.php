@@ -1,4 +1,4 @@
-<?php 
+<?php
 get_header();
 $upload_dir = wp_upload_dir();
 ?>
@@ -69,106 +69,41 @@ $upload_dir = wp_upload_dir();
 <div class="newbiz" id="newbiz">
     <div class="container">
 
-      <h4>Choose your own programming</h4>
-      <p></p>
-      <div class="servicesNav">
-        <ul>
-          <li class="active">Define Your Brand.</li>
-          <li>Captivate Your Audience.</li>
-          <li>Promote Your Message.</li>
-        </ul>
-      </div>
-
-      <div class="serviceslist">
-        <div class="grid">
-          
-        <div class="gridcontent active">
-            <ul class="gridtext">
-
-                <li>
-                <h5> 3 hours</h5> <h3>Vision & Mission Development</h3>
-           
-                <p>Develop the “Why” of your business by assessing yourself, your company’s core values and how your business fits into your personal life. Understand where you’re going so you can focus on what’s most important with in your business.
-                </p>
+        <h4>Choose your own programming</h4>
+        <p class="programming-paragraph">Schedule a session to receive your interactive curriculum with worksheets, prompts and surveys. The curriculum will help assess your business, pinpoint your problems and get you to start thinking about possible solutions. When you complete your homework, we’ll be on the same page and ready to maximize our time together. </p>
+        
+        <?php
+            $workshops = woocommerce_subcats_from_parentcat_by_ID(27);
+            $workshopsInfo;
+            $firstWorkshop = true;
             
-                <a  class="link"href="#">Schedule Now &rarr;</a></li>
-
-                <li> 
-                <h5> 3 hours</h5><h3>Competitor Analysis</h3>
-          
-                <p>Together we’ll examine websites of 5 of your direct competitors and list what consistent sales points are being offered in your industry and how they are being offered. You’ll learn where you stand in your market avoid offering the same thing as everybody else.
-                </p>
-          
-                <a  class="link"href="#">Schedule Now &rarr;</a></li>
-
-                <li>
-                <h5> 3 hours</h5> <h3>Define & Articulate Your Niche</h3>
-              
-                <p>You’re awesome at what you do, but do your customers know what makes you great? Discover ways you are misunderstood by those you’re trying to reach and organize your ideas and individuality into a unique offering that is undeniable and easily understood.
-                </p>
-          
-                <a  class="link"href="#">Schedule Now &rarr;</a></li>
+            foreach ($workshops['productsContent'] as $workshopContentGroup){
+                if ($firstWorkshop) {
+                    $workshopsInfo .= '<div class="gridcontent active">';
+                    $firstWorkshop = false;
+                } else {
+                    $workshopsInfo .= '<div class="gridcontent">';
+                }
+                $workshopsInfo .= '<ul class="gridtext">';
+                foreach ($workshopContentGroup as $workshopContent){
+                    $workshopsInfo .= $workshopContent; 
+                }
+                $workshopsInfo .= '</ul>';
+                $workshopsInfo .= '</div>';
+            }   
+        ?>
+        <div class="servicesNav">
+            <ul>
+                <?php echo $workshops['productsNav']; ?>
             </ul>
-
-       
-          
-
+        </div>
+    
+        <div class="serviceslist">
+            <div class="grid">
+            <?php echo $workshopsInfo ?>
+            </div>
         </div>
 
-          <div class="gridcontent">
-     
-            <ul class="gridtext">
-
-                    <li> <h5> 3 hours</h5><h3>Re-Target Better Customers</h3>
-                    
-                    <p>Learn to think like your ideal customers, segment your audience and target the most attractive groups. When you understand the desires and motivations of your ideal customer you can cater your messaging to exactly what they want to hear.
-                    </p>
-                 
-                    <a  class="link"href="#">Schedule Now &rarr;</a></li>
-
-                    <li> <h5> 3 hours</h5><h3>Features & Benefits Assessment</h3>
-                    
-                    <p>Explore techniques to add more value to your products by defining your key features and benefits. Together we’ll uncover something more meaningful than just a product or service to attach the right feelings and associations to your message.
-                    </p>
-            
-                    <a  class="link"href="#">Schedule Now &rarr;</a></li>
-
-                    <li> <h5> 3 hours</h5><h3>Add Value to Close the Deal</h3>
-                    
-                    <p>Are you converting as many customers into sales as you should be? Learn how to lower the risk and make it easier for them to opt in. Compel them to act by formulating credible guarantees and undeniable offers.
-                    </p>
-                 
-                    <a  class="link"href="#">Schedule Now &rarr;</a></li>
-            </ul>
-
-          </div>
-
-          <div class="gridcontent">
-            <ul class="gridtext">
-                <li>
-                    <h5> 1.5 hours</h5>
-                    <h3>Sales & Promotional Material Development</h3>
-                    <p>How you present your business will determine how many and what kind of customers you draw. Learn to think like a designer to develop marketing material that builds interest, adds credibility, leads viewers to decisions and ultimately gets them to act.</p>
-                    <a class="link"href="#">Schedule Now &rarr;</a>
-                </li>
-                <li> 
-                    <h5>3 hours</h5>
-                    <h3>Media Plan Development and Strategy</h3>                    
-                    <p>How can your marketing processes and procedures be improved and what marketing material is necessary for your goals? Learn the pros and cons of different methods to promote and determine the best path to execute your strategy with in your budget.</p>
-                    
-                    <a class="link"href="#">Schedule Now &rarr;</a>
-                </li>
-                <li> 
-                    <h5> 3 hours</h5>
-                    <h3>Build Your Sales Funnel</h3>
-                    <p>Where do your leads come from? Which un-tapped markets are you missing out on? What is your strategy for bringing in more leads and converting more of them to sales? Together we’ll answer these questions and illustrate a strategy for you to follow.</p>
-                    <a class="link"href="#">Schedule Now &rarr;</a>
-                </li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
     </div>
 </div>
 <!--BIZ SHOP MINI SECTION START -->
@@ -208,6 +143,7 @@ $upload_dir = wp_upload_dir();
 
 <!--MISSION STATEMENT SECTION START -->
 <div class="why-choose">
+    <div class="container">
     <div class="why-choose-text-mini">
         <h2>Why Choose BizVisionary</h2>
         <p>I understand the concerns, goals and budgets of entrepreneurs so I cater my services to the strivers who want to market themselves professionally and effectively but can’t afford to hire a fully staffed marketing agency. I will assess your marketing needs and show you the tools, platforms, and the known strategies to reach more people in more meaningful ways. 
@@ -220,10 +156,11 @@ $upload_dir = wp_upload_dir();
         <a class="link" href="/branding.php">Schedule Speaking Event</a>
     </div>
 </div>
+</div>
 <!--MISSION STATEMENT SECTION END -->
 
 
 
 <?php
-get_footer(); 
+get_footer();
 ?>

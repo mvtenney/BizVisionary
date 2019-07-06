@@ -44,10 +44,10 @@ body {
 
 p {
     font-size: 1.8rem;
-    line-height: 2.2rem;
+    line-height: 2.8rem;
     font-family: 'Montserrat', sans-serif;
 }
-
+.programming-paragraph {margin-bottom:90px;}
 a:link,
 a:visited,
 a:hover,
@@ -145,7 +145,7 @@ h1.elementor-heading-title.elementor-size-default {
     .wp-block-column:nth-child(2n) {
         margin: 0;
     }
-
+}
     @media (min-width: 782px) {
         .wp-block-column:not(:first-child) {
             margin: 0;
@@ -162,7 +162,7 @@ h1.elementor-heading-title.elementor-size-default {
             /* flex-basis: calc(50% - 16px); */
             flex-grow: 1
         }
-
+    }
         /*
     Navbar
 */
@@ -780,7 +780,6 @@ h1.elementor-heading-title.elementor-size-default {
 
         .newbiz {
             background-color: #FAF9F8;
-            height: 90vh;
             width: 100%;
             overflow: hidden;
         }
@@ -788,7 +787,7 @@ h1.elementor-heading-title.elementor-size-default {
         .serviceslist {
             display: flex;
             flex-direction: column;
-
+            margin-bottom: 140px;
         }
 
         .container h4 {
@@ -843,7 +842,7 @@ h1.elementor-heading-title.elementor-size-default {
 
         .servicesNav ul li {
             font-weight: 100;
-            font-size: 1.62em;
+            font-size: 2rem;
             cursor: pointer;
             padding: 20px;
             margin-bottom: -1px;
@@ -994,7 +993,7 @@ h1.elementor-heading-title.elementor-size-default {
             background: rgba(255, 255, 255, .8);
             border-radius: 10px;
             padding: 45px 20px;
-            max-width: 1200px;
+
         }
 
 

@@ -35,3 +35,72 @@ add_theme_support(
         'flex-height' => false,
     )
 );
+
+function woocommerce_subcats_from_parentcat_by_ID($parent_cat_ID)
+{
+    $args = array(
+    'hierarchical' => 1,
+    'show_option_none' => '',
+    'hide_empty' => 0,
+    'parent' => $parent_cat_ID,
+    'taxonomy' => 'product_cat'
+    );
+
+    $subcats = get_categories($args);
+    
+    $productsNav;
+    $productsContent = [];
+    $productFirst = true;
+
+    foreach ($subcats as $sc) {
+
+        //get product nav
+        $link = get_term_link($sc->slug, $sc->taxonomy);
+
+        if ($productFirst) {
+            $productsNav .= '<li class="active">'.$sc->name.'</li>';
+        } else {
+            $productsNav .= '<li>'.$sc->name.'</li>';
+        }
+        
+        $productFirst = false;
+        $productContent = [];
+        
+        //get product info
+        $args = array(
+            'post_type' => 'product',
+            'post_status' => 'publish',
+            'posts_per_page' => 3,
+            'tax_query' => array( array(
+                'taxonomy'         => 'product_cat',
+                'field'            => 'slug', // Or 'term_id' or 'name'
+                'terms'            => $sc->slug, // A slug term
+                // 'include_children' => false // or true (optional)
+            ))
+        );
+
+        $loop = new WP_Query( $args );
+        
+        if ( $loop->have_posts() ) {
+            while ( $loop->have_posts() ) : $loop->the_post();
+            $product = wc_get_product( $loop->post->ID );
+            $productContent[] = 
+            '<li>'.
+                '<h5>'.$product->get_attribute('hours').' Hours</h5>' .
+                '<h3>'.$product->get_name().'</h3>'.
+                '<p>'.$product->get_short_description().'</p>'.
+            '</li>';            
+            endwhile;
+        } else {
+            $productContent[] = __( 'No products found' );
+        }
+        wp_reset_postdata();
+        $productsContent[] = $productContent;
+    }
+
+    $products = [
+        'productsNav' => $productsNav, 
+        'productsContent' => $productsContent
+    ];
+    return $products;    
+}

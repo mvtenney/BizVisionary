@@ -1,5 +1,6 @@
 <?php 
-get_header(); 
+get_header();
+$upload_dir = wp_upload_dir();
 ?>
 <script>
     jQuery(document).ready(function(){
@@ -176,7 +177,7 @@ get_header();
         <h4>Invest your time, save your money</h4>
         <div class="products">
             <div class="products-img">
-                <img alt="brand development workshop" src="http://bizvisionary.dom/wp-content/uploads/2019/06/Workbook_Img-e1561596990639.png">
+                <img alt="brand development workshop" src="<?php echo $upload_dir['baseurl'] . '/2019/06/Workbook_Img-e1561596990639.png' ?>">
             </div>
             <div class="products-desc">
                 <h3>Master Collection - Brand Development Workshop Series</h3>

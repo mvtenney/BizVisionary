@@ -1006,3 +1006,94 @@ h1.elementor-heading-title.elementor-size-default {
             opacity: 0.8;
         }
         /* FOOTER STYLES*/
+
+
+        /* ABOUT PAGE TEMPLATE */
+
+        .bv_pages-header {
+            height: 40vh;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+
+        }
+        .bv_pages-header--gradient-bg {
+            background: linear-gradient(20deg, #00aeefb3 0%, rgba(255, 255, 255, 1) 30%, rgba(211, 200, 192, 1) 101%, rgba(0, 174, 239, 1) 100%);
+        }
+        
+        .bv_pages-header.bv_pages-header--gradient-bg img {
+            z-index: 0;
+            position: absolute;
+            height: 100%;
+            width: auto;
+        }
+        h1.bv_pages-title {
+            font-size: 4.2vw;
+            margin: auto;
+            font-weight:500;
+        }
+        .entry-content > p {
+            margin: 40px auto;
+            line-height: 1.5em;
+        }
+
+
+        /* Services Grid Template */
+        .bv_grid-col--three {
+            display: flex;
+            margin: auto;
+            font-size: 2rem;
+            align-items: stretch;
+            justify-content: center;
+        
+                justify-content: space-between;
+                animation: slide 5s cubic-bezier(0.075, 0.82, 0.165, 1) normal forwards;
+                border: 1px solid #59B9E5;
+                background: #fff;
+                border-radius: 10px;
+         
+        }
+        .bv_grid-col--three > li {
+            list-style: none;
+            padding: 50px 100px;
+            /* max-width: 54px; */
+            flex-grow: 1;
+         
+            margin: 20px;
+            border-radius: 20px;
+            flex-wrap: wrap; 
+     
+            text-align: center;
+    max-width: 500px;
+ 
+            }
+
+            .bv_background--splat {
+               background-image:  url("images/splatground.jpg");
+               height:30vh;
+               background-repeat: no-repeat;
+               background-size: cover;
+            }
+
+            .bv_section--fullwidth {
+                width:100wv;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+
+            }
+            .bv_section-container h1 {
+                font-weight: 100;
+                font-size: 3.2rem;
+                margin: 140px 0 40px;
+                text-transform: UPPERCASE;
+                letter-spacing: 0.2em;
+                
+            }
+            .bv_section-container {
+                display: flex;
+                flex-direction: column;
+                width: 1300px;
+                max-width: calc(100% - 40px);
+            }

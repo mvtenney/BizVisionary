@@ -1,6 +1,6 @@
 <?php
 get_header();
-$upload_dir = wp_upload_dir();
+
 ?>
 <script>
     jQuery(document).ready(function(){
@@ -111,23 +111,7 @@ $upload_dir = wp_upload_dir();
 </div>
 
 <!--BIZ SHOP MINI SECTION START -->
-<div class="shop">
-    <div class="container">
-        <h4>Invest your time, save your money</h4>
-        <div class="products">
-            <div class="products-img">
-                <img alt="brand development workshop" src="<?php echo $upload_dir['baseurl'] . '/2019/06/Workbook_Img-e1561596990639.png' ?>">
-            </div>
-            <div class="products-desc">
-            <?php $bdw = wc_get_product(193);
-                echo '<h3>'.$bdw->get_name().'</h3>'.
-                '<p>'.$bdw->get_description().'</p>'.
-                '<a class="button cta" href="/cart'.$bdw->add_to_cart_url().'">Get the Workshop</a>';
-            ?>
-            </div>
-        </div>
-    </div>
-</div>
+<?php get_template_part('template-parts/single' , 'product');?>
 <!--BIZ SHOP MINI SECTION END -->
 
 <!--SERVICES SECTION START -->

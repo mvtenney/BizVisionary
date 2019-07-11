@@ -104,3 +104,13 @@ function woocommerce_subcats_from_parentcat_by_ID($parent_cat_ID)
     ];
     return $products;    
 }
+
+
+/* Register Categories for Pages */
+
+
+function bv_add_page_cats(){
+    register_taxonomy_for_object_type('post_tag', 'page');
+    register_taxonomy_for_object_type('category', 'page'); 
+}
+add_action( 'init', 'bv_add_page_cats' );

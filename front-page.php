@@ -29,12 +29,12 @@ $upload_dir = wp_upload_dir();
 </script>
 
 <div class="hero">
-    <div class="container">
+    <div class="bv_container">
         <div class="herotext">
             <h1><span class="slideIn">Design the business you've always wanted.</span></h1>
-            <div class="calltoaction">
-                <a class="button primary">SCHEDULE NOW</a>
-                <a class="button secondary">Learn More</a>
+            <div class="bv_button__group">
+                <a class=" bv_button bv_button__primary bv_button--large">SCHEDULE NOW</a>
+                <a class="bv_button bv_button__secondary bv_button--large">Learn More</a>
             </div>  
         </div>
     </div>
@@ -64,13 +64,13 @@ $upload_dir = wp_upload_dir();
         <p> I partner with entrepreneurs and business owners to launch & grow their marketing efforts.
             I <span style="color:#59B9E5; font-weight:bold; text-transform:uppercase;" title="see">Support, Equip</span> and <span style="color:#59B9E5; font-weight:bold; text-transform:uppercase;" title="see">Educate</span> through strategy sessions, media development, creative design and brand development workshops.
         </p>
-        <a class="link" href="/branding.php">About Me</a>
+        <a class="bv_link" href="/branding.php">About Me</a>
     </div>
 </div>
 <!--MISSION STATEMENT SECTION END -->
 
 <div class="newbiz" id="newbiz">
-    <div class="container">
+    <div class="bv_container">
 
         <h4>Choose your own programming</h4>
         <p class="programming-paragraph">Schedule a session to receive your interactive curriculum with worksheets, prompts and surveys. The curriculum will help assess your business, pinpoint your problems and get you to start thinking about possible solutions. When you complete your homework, we’ll be on the same page and ready to maximize our time together. </p>
@@ -112,7 +112,7 @@ $upload_dir = wp_upload_dir();
 
 <!--BIZ SHOP MINI SECTION START -->
 <div class="shop">
-    <div class="container">
+    <div class="bv_container">
         <h4>Invest your time, save your money</h4>
         <div class="products">
             <div class="products-img">
@@ -122,7 +122,7 @@ $upload_dir = wp_upload_dir();
             <?php $bdw = wc_get_product(193);
                 echo '<h3>'.$bdw->get_name().'</h3>'.
                 '<p>'.$bdw->get_description().'</p>'.
-                '<a class="button cta" href="/cart'.$bdw->add_to_cart_url().'">Get the Workshop</a>';
+                '<a class="bv_button bv_button__primary bv_button--large" href="/cart'.$bdw->add_to_cart_url().'">Get the Workshop</a>';
             ?>
             </div>
         </div>
@@ -140,7 +140,7 @@ $upload_dir = wp_upload_dir();
 
 <!--MISSION STATEMENT SECTION START -->
 <div class="why-choose">
-    <div class="container">
+    <div class="bv_container">
     <div class="why-choose-text-mini">
         <h2>Why Choose BizVisionary</h2>
         <p>I understand the concerns, goals and budgets of entrepreneurs so I cater my services to the strivers who want to market themselves professionally and effectively but can’t afford to hire a fully staffed marketing agency. I will assess your marketing needs and show you the tools, platforms, and the known strategies to reach more people in more meaningful ways. 

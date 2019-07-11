@@ -1,0 +1,70 @@
+/* 
+    Gutenberg Styles
+ */
+
+
+
+ .wp-block-columns.bv-two-col {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    /* justify-content: flex-end; */
+    width: 100%;
+}
+
+.wp-block-column.subtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wp-block-column.subtext h2 {
+    font-weight: 500;
+    font-size: 2.2vw;
+    line-height: 46px;
+    margin-bottom: 46px;
+    letter-spacing: -0.02em;
+}
+
+.wp-block-group.bv-headings p {
+    font-size: 1.8rem;
+    line-height: 7.2rem;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2em;
+    font-weight: 100;
+}
+
+.bv-modaL-link p button {
+    background: transparent;
+    border: transparent;
+}
+
+.wp-block-column.subtext.color-one {
+    background-color: rgba(211, 200, 192, .9);
+    margin: 0;
+}
+
+.wp-block-column.subtext.color-two {
+    background-color: #0e3648;
+}
+
+@media (min-width: 600px) {
+    .wp-block-column:nth-child(2n) {
+        margin: 0;
+    }
+    @media (min-width: 782px) {
+        .wp-block-column:not(:first-child) {
+            margin: 0;
+        }
+        .kt-row-column-wrap {
+            padding: 0;
+        }
+    }
+    @media (min-width: 600px) {
+        .wp-block-column {
+            /* flex-basis: calc(50% - 16px); */
+            flex-grow: 1
+        }
+    }
+}

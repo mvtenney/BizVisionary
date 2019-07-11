@@ -12,14 +12,14 @@
   <?php if ( has_nav_menu( 'menu-1' ) ) : ?>
     <nav id="site-navigation" class="main-navigation navigation-scroll-stopped" aria-label="<?php esc_attr_e( 'Top Menu', 'twentynineteen' ); ?>">
             <?php //fill with customizer stuff ?>
-            <div class="topNav">
-                <div class="container">
-                    <div class="navLeft">Get the Brand Development Workshop 10% off with offer code SPRINGMADNESS</div>
-                    <div class="navRight"><a class="xSmallPromo" href="/branding.php">Get the Workshop</a></div>
+            <div class="bv_nav--top">
+                <div class="bv_container">
+                    <div class="bv_nav--top-left">Get the Brand Development Workshop 10% off with offer code SPRINGMADNESS</div>
+                    <div class="bv_nav--top-right"><a class="bv_button bv_button__primary bv_button--small" href="/branding.php">Get the Workshop</a></div>
                 </div>
             </div>
-            <div class="bottomNav">
-                <div class="container">
+            <div class="bv_nav--bottom">
+                <div class="bv_container">
                     <?php if ( has_custom_logo() ) : ?>
                         <div class="site-logo"><?php the_custom_logo(); ?></div>
                     <?php endif; ?>

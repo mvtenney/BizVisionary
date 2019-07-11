@@ -2,8 +2,11 @@
 
 //Loads theme styles and scripts
 function bizvisionary_scripts() {
-    wp_enqueue_style( 'bizvisionary-reset', get_theme_file_uri('reset.css'), array(), wp_get_theme()->get( 'Version' ) );
+    wp_enqueue_style( 'bizvisionary-reset', get_theme_file_uri('/CSS/reset.css'), array(), wp_get_theme()->get( 'Version' ) );
+    wp_enqueue_style( 'bizvisionary-base', get_theme_file_uri('/CSS/base.css'), array(), wp_get_theme()->get( 'Version' ) );
     wp_enqueue_style( 'bizvisionary-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
+    wp_enqueue_style( 'bizvisionary-elementor', get_theme_file_uri('/CSS/elementor.css'), array(), wp_get_theme()->get( 'Version' ) );
+    wp_enqueue_style( 'bizvisionary-gutenberg', get_theme_file_uri('/CSS/gutenberg.css'), array(), wp_get_theme()->get( 'Version' ) );
     wp_enqueue_script('font-awesome', 'https://kit.fontawesome.com/efbfa885c4.js'); 
 	//wp_enqueue_script( 'bizvisionary-priority-menu', get_theme_file_uri( '/js/priority-menu.js' ), array(), '1.1', true );	
 }

@@ -8,18 +8,21 @@
  */
 
 get_header();
+wp_enqueue_script('particles-js');
+wp_enqueue_style('particles-js');
+wp_enqueue_script('particles-settings-js', get_theme_file_uri( '/js/particlesJS-settings.js' ), array('particles-js'), false, true);
 ?>
  
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
        
-        <?php get_template_part('template-parts/content' , 'title');?>
+        <?php //get_template_part('template-parts/content' , 'title');?>
 			<?php
 
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
-?>              <div class="container">
+?>              
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                         <div class="entry-content">
                             <?php
@@ -34,7 +37,6 @@ get_header();
                             ?>
                         </div><!-- .entry-content -->
                     </article>
-                </div>
 					<?php
 
 				// If comments are open or we have at least one comment, load up the comment template.
@@ -47,8 +49,12 @@ get_header();
 
 		</main><!-- #main -->
     </section><!-- #primary -->
-    
-    <?php get_template_part('template-parts/three-column' , 'grid');?>
-    <?php get_template_part('template-parts/single' , 'product');?>
+    <script>
+    jQuery('document').ready(function (){
+        jQuery('.particles-js-canvas-el').prependTo('#particles-js');
+    });
+    </script>
+    <?php //get_template_part('template-parts/three-column' , 'grid');?>
+    <?php //get_template_part('template-parts/single' , 'product');?>
 <?php
 get_footer();

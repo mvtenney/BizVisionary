@@ -3,7 +3,10 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<?php wp_head(); ?>
+    <title><?php echo get_bloginfo('name');?> | Business Developer</title>
+ 
+    <?php wp_head(); ?>
+  
 </head>
 
 <body <?php body_class(); ?>>
@@ -13,13 +16,26 @@
     <nav id="site-navigation" class="main-navigation navigation-scroll-stopped" aria-label="<?php esc_attr_e( 'Top Menu', 'twentynineteen' ); ?>">
             <?php //fill with customizer stuff ?>
             <div class="bv_nav--top">
-                <div class="bv_container">
-                    <div class="bv_nav--top-left">Get the Brand Development Workshop 10% off with offer code SPRINGMADNESS</div>
-                    <div class="bv_nav--top-right"><a class="bv_button bv_button__primary bv_button--small" href="/branding.php">Get the Workshop</a></div>
+                <div class="bv_container nowrap">
+                    <div class="bv_nav--top-left"><p>Hello <?php
+                        $current_user = wp_get_current_user();
+                        if (is_user_logged_in()){
+                            echo $current_user->first_name;
+                        } ?>!</p></div>
+                    <div class="bv_nav--top-right">
+                        
+                        <a class="" href="/my-account/">My Account</a>
+                        <?php if (is_user_logged_in()) : ?>
+                            <a href="<?php echo wp_logout_url(get_permalink()); ?>">Sign Out</a>
+                        <?php else : ?>
+                            <a href="<?php echo wp_login_url(get_permalink()); ?>">Sign In</a>
+                        <?php endif;?>
+                        <a class="" href="/cart/">Cart</a> 
+                    </div>
                 </div>
             </div>
             <div class="bv_nav--bottom">
-                <div class="bv_container">
+                <div class="bv_nav--container">
                     <?php if ( has_custom_logo() ) : ?>
                         <div class="site-logo"><?php the_custom_logo(); ?></div>
                     <?php endif; ?>
@@ -32,6 +48,11 @@
                     )
                 );
                 ?>
+                    <div id="bv_hamburger">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
                 </div>
             </div>
 	</nav><!-- #site-navigation -->

@@ -12,7 +12,7 @@ $upload_dir = wp_upload_dir();
 
 
 <div class="shop">
-    <div class="container">
+    <div class="bv_container">
         <h4>Invest your time, save your money</h4>
         <div class="products">
             <div class="products-img">
@@ -22,7 +22,7 @@ $upload_dir = wp_upload_dir();
             <?php $bdw = wc_get_product(193);
                 echo '<h3>'.$bdw->get_name().'</h3>'.
                 '<p>'.$bdw->get_description().'</p>'.
-                '<a class="button cta" href="/cart'.$bdw->add_to_cart_url().'">Get the Workshop</a>';
+                '<a class="bv_button cta" href="/cart'.$bdw->add_to_cart_url().'">Get the Workshop</a>';
             ?>
             </div>
         </div>
